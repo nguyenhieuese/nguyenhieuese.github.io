@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu</title>
+  <style type="text/css">
+      body{
+          background: #282923;
+      }
+      *{
+          text-decoration: none;
+          list-style-type: none;
+          margin: 0px;
+          padding: 0px;
+          color: white;
+          font-family: Arial;
+      }
+      .nav { 
+          background: black;
+          display: flex;
+          height: 4em;
+          line-height: 4em;
+          justify-content: space-between;
+      }
+      .logo {
+        font-size: 2em;
+        padding-left: 2em;
+        
+      }
+      .menu {
+          display: flex;
+      }
+      .menu li {
+          padding-right: 2.5em;
+          font-size: 17px;
+      }
+      .menu li a:hover {
+          color: #e32879;
+          transition: color .2s ease-out;
+      }
+      .menu_down {
+          background: black;
+          width: 180px;
+          height: 10em;
+          line-height: 3em;
+          margin: 0px auto;
+          position: absolute;
+          top: 68px;
+          right: 72px;
+          display: none;
+      }
+      .menu_down li {
+          text-align: center;
+          padding: 0px;
+      }
+      .menu_down li a:hover {
+          color: #32879;
+      }
+      .menu .menu_link:hover .menu_down {
+          display: block;
+      }
+   </style>
+</head>
+<body>
+  <div class="nav">
+      <a href="#" class="logo">Hieuese</a>
+      <ul class="menu">
+          <li><a href="#">Trang Chủ</a></li>
+          <li><a href="#">Tác Giả</a></li>
+          <li class="menu_link">
+              <a href="#">Kho Ảnh</a>
+              <ul class="menu_down">
+                <li><a href="#">Tự Sướng</a></li> 
+                <li><a href="#">Chụp Lén</a></li>
+                <li><a href="#">Ảnh Dìm</a></li>
+              </ul>
+          </li>
+          <li><a href="#">Thông Tin</a></li>
+       </ul>         
+  </div>
+
+</body>
+</html>
